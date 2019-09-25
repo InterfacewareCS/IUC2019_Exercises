@@ -1,0 +1,8 @@
+{
+    "Samples": [
+        {
+            "Message": "[\r  {\r    \"_id\": \"5973782bdb9a930533b05cb2\",\r    \"isActive\": true,\r    \"balance\": \"$1,446.35\",\r    \"age\": 32,\r    \"eyeColor\": \"green\",\r    \"name\": \"Logan Keller\",\r    \"gender\": \"male\",\r    \"company\": \"ARTIQ\",\r    \"email\": \"logankeller@artiq.com\",\r    \"phone\": \"+1 (952) 533-2258\",\r    \"friends\": [\r      {\r        \"id\": 0,\r        \"name\": \"Colon Salazar\"\r      },\r      {\r        \"id\": 1,\r        \"name\": \"French Mcneil\"\r      },\r      {\r        \"id\": 2,\r        \"name\": \"Carol Martin\"\r      }\r    ],\r    \"favoriteFruit\": \"banana\"\r  }\r]",
+            "Name": "Sample JSON"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+<channel
+   name="Exercise2 - AWS S3 Adapter IUC2019"
+   guid="A20D5DB948277E7D145B41B1162464F2"
+   description="This channel connects to AWS S3 APIs that allows Iguana to upload, read and delete files from AWS S3. &#xD;&#xA;&#xD;&#xA;https://help.interfaceware.com/v6/aws-s3-adapter&#xD;&#xA;&#xD;&#xA;"
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_mapper
+      guid="Exercise2_-_AWS_S3_Adapter_IUC2019-To-cFUvxJe7KsstK3"
+      commit_id="71eaf356ec2a96b25b778343fb176d6736bcef6f"
+      commit_comment="updated code">
+      <dequeue_list>
+         <dequeue
+            source_name="brige - iuc"
+            dequeue_guid="EA039B75CBE400EFFA4C65F917613465"/>
+         <dequeue
+            source_name="CD"
+            dequeue_guid="53EF8464505F69B81F37589F2F323FDC"/>
+      </dequeue_list>
+   </to_mapper>
+   <from_channel/>
+</channel>
