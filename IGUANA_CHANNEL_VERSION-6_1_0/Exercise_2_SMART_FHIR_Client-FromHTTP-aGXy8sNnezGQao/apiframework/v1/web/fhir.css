@@ -1,0 +1,487 @@
+/* NEW COLOR SCHEMING FROM ZACH's GUID - Trevor */
+.pure-button-primary {
+  border-width: 0;
+  padding: 1em;
+  background-color: #5CB533;
+  border-radius: 4px;
+  min-width: 100px; }
+  .pure-button-primary.button-small {
+    min-width: 0; }
+
+.pure-button-blue {
+  background-color: #2590CD;
+  color: #ffffff; }
+
+.pure-button-grey {
+  color: #2b3133;
+  background-color: #e5e8e9; }
+
+.pure-button-red {
+  color: #ffffff;
+  background-color: #DE3617; }
+
+.pure-button-light-grey {
+  color: #2b3133;
+  background: #e5e8e9; }
+
+.pure-button {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-size: 12px; }
+  .pure-button > img {
+    width: 24px;
+    height: 24px;
+    margin: auto;
+    display: inline-block;
+    vertical-align: middle; }
+
+.button-standard, .button-condensed {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 0px;
+  display: inline-block; }
+  .button-standard img, .button-standard svg, .button-condensed img, .button-condensed svg {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle; }
+  .button-standard span, .button-condensed span {
+    vertical-align: middle;
+    margin-left: 5px; }
+
+.button-standard {
+  font-size: 12px;
+  line-height: 12px;
+  padding: 12px 16px; }
+  .button-standard img {
+    margin-right: 12px; }
+
+.button-condensed {
+  font-size: 10px;
+  line-height: 10px;
+  padding: 9px 12px; }
+  .button-condensed img {
+    margin-right: 8px; }
+
+/* button-group is for buttons in input-groups */
+.button-group {
+  border: 1px solid #C9D0D5;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.75px; }
+
+.button-primary {
+  background: #5CB533;
+  color: #ffffff; }
+  .button-primary:hover {
+    background: #82c341; }
+
+.button-secondary {
+  background: rgba(107, 122, 134, 0.1);
+  /* $grey-600 at 10% opacity */
+  color: #6B7A86 !important; }
+  .button-secondary:hover {
+    background: rgba(107, 122, 134, 0.2);
+    /* $grey-600 at 20% opacity */ }
+
+.button-tertiary {
+  color: #6B7A86;
+  background: transparent; }
+  .button-tertiary:hover {
+    background: #E2E5E8; }
+
+.button-tertiary-red {
+  color: #6B7A86;
+  background: transparent; }
+  .button-tertiary-red:hover {
+    background: #FAE9E6; }
+
+.button-blue {
+  background: #2590CD;
+  color: #B3DDF5 !important; }
+  .button-blue:hover {
+    background: #4ab1e4; }
+
+.button-red {
+  color: #ffffff !important;
+  background: #DE3617; }
+  .button-red:hover {
+    background: #BF0710; }
+
+/* Custom Card Stylesheet */
+/* Trevor Hilton */
+.card-group-vertical {
+  height: 100%; }
+  .card-group-vertical .card-spacer-10 {
+    height: 10%; }
+  .card-group-vertical .card-spacer-20 {
+    height: 20%; }
+  .card-group-vertical .card-spacer-30 {
+    height: 30%; }
+  .card-group-vertical .card-spacer-40 {
+    height: 40%; }
+  .card-group-vertical .card-spacer-50 {
+    height: 50%; }
+  .card-group-vertical .card-spacer-60 {
+    height: 60%; }
+  .card-group-vertical .card-spacer-70 {
+    height: 70%; }
+  .card-group-vertical .card-spacer-80 {
+    height: 80%; }
+  .card-group-vertical .card-spacer-90 {
+    height: 90%; }
+
+.card {
+  background-color: #ffffff;
+  border-radius: .25em;
+  margin-bottom: .5em; }
+  .card.card-grey {
+    background-color: #F4F6F8 !important; }
+  .card.card-blue-lighter {
+    background-color: #E5F3FA; }
+  .card.card-grey-border {
+    border: 1px solid #C9D0D5; }
+  .card .card-body {
+    padding: 1em; }
+  .card .card-text {
+    font-size: 14px; }
+  .card .card-title {
+    font-size: 14px; }
+  .card .card-subtitle {
+    font-size: .8em;
+    color: #859298; }
+  .card div {
+    margin: 0px;
+    margin-bottom: .5em; }
+  .card.card-transparent {
+    background-color: transparent;
+    border: 0; }
+
+.card-primary .card-title {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0.75em;
+  border-bottom: 1px solid #E2E5E8;
+  margin-bottom: 0; }
+
+/* Card group styling for vertical group (v), and horizontal group (h) */
+.card-group-v .card:first-child {
+  border-radius: 4px 4px 0px 0px;
+  margin-top: 0px; }
+
+.card-group-v .card {
+  margin: 0px;
+  margin-top: -1px;
+  border-radius: 0px; }
+
+.card-group-v .card:last-child {
+  border-radius: 0px 0px 4px 4px; }
+
+.card-group-h .card:first-child {
+  border-radius: 4px 0px 0px 4px; }
+
+.card-group-h .card {
+  margin: 0px;
+  border-radius: 0px; }
+
+.card-group-h .card:last-child {
+  border-radius: 0px 4px 4px 0px; }
+
+/* An input stylesheet
+This will style things like input fields in forms, select menus
+
+Author: Trevor Hilton
+*/
+input {
+  font-family: 'Open Sans';
+  font-weight: 400; }
+
+.input-container {
+  margin-top: 0.4em;
+  margin-bottom: 1.3em; }
+  .input-container .input-checkbox {
+    cursor: pointer; }
+    .input-container .input-checkbox input, .input-container .input-checkbox .input-checkbox-label {
+      display: inline-block;
+      cursor: pointer; }
+    .input-container .input-checkbox .input-checkbox-label {
+      margin: 0px 5px; }
+  .input-container .input-field input {
+    border: 1px solid #C9D0D5;
+    border-radius: 4px;
+    padding-right: 1em;
+    padding-left: 1em;
+    color: #1d2122;
+    width: calc(100% - 2em);
+    height: 28px;
+    font-size: 12px; }
+    .input-container .input-field input:focus {
+      outline: 0;
+      border-color: #4ab1e4; }
+    .input-container .input-field input[disabled], .input-container .input-field input:disabled {
+      color: #9AA5B2;
+      background-color: #F4F6F8; }
+    .input-container .input-field input.input-button {
+      cursor: pointer;
+      text-align: center; }
+  .input-container .input-field select {
+    width: 90%;
+    border: 1px solid #C9D0D5;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 32px;
+    font-size: 12px; }
+  .input-container .input-icon {
+    align-items: center;
+    display: flex; }
+    .input-container .input-icon svg {
+      display: block;
+      margin: 0 auto; }
+  .input-container .input-group {
+    width: 100%; }
+    .input-container .input-group .input-field:first-child input, .input-container .input-group .input-field:first-child textarea {
+      border-radius: 4px 0 0 4px; }
+    .input-container .input-group .input-field input, .input-container .input-group .input-field textarea {
+      position: relative;
+      border-radius: 0;
+      z-index: 1; }
+      .input-container .input-group .input-field input:focus, .input-container .input-group .input-field textarea:focus {
+        z-index: 2; }
+      .input-container .input-group .input-field input[disabled], .input-container .input-group .input-field input:disabled, .input-container .input-group .input-field textarea[disabled], .input-container .input-group .input-field textarea:disabled {
+        color: #9AA5B2;
+        background-color: #F4F6F8; }
+    .input-container .input-group .input-field input.input-button {
+      cursor: pointer;
+      text-align: center;
+      font-size: 10px; }
+    .input-container .input-group .input-field a {
+      height: 30px; }
+    .input-container .input-group .input-field:last-child input, .input-container .input-group .input-field:last-child textarea {
+      border-radius: 0 4px 4px 0; }
+  .input-container .input-label-minor {
+    text-transform: uppercase;
+    color: #6B7A86;
+    font-size: 11px; }
+  .input-container .input-label-major {
+    font-weight: 600;
+    margin-bottom: 5px; }
+
+.button-container div {
+  margin: 0px 5px; }
+
+.selector-with-colors {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #C9D0D5;
+  border-radius: 4px;
+  padding-right: 1em;
+  padding-left: 1em;
+  color: #1d2122;
+  height: 28px;
+  font-size: 12px; }
+  .selector-with-colors .selector-value, .selector-with-colors .selector-color-box {
+    line-height: 28px;
+    /*important that this equals the 'height' attr. of the parent*/
+    display: inline-block; }
+  .selector-with-colors img {
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    display: inline-block;
+    right: 12px;
+    top: 9px;
+    position: absolute; }
+
+.selector-color-box {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  margin-right: 1em;
+  position: relative;
+  top: 2px;
+  left: 3px; }
+
+#server_type_selector,
+#server_size_selector {
+  min-width: 150px; }
+
+#server_type_options,
+#server_size_options {
+  min-width: 173px; }
+
+table.dash {
+  width: 100%;
+  font-size: 0.8em; }
+  table.dash tr td, table.dash tr th {
+    padding: 1em;
+    border-bottom: 1px solid #e5e8e9; }
+    table.dash tr td.status, table.dash tr th.status {
+      position: relative; }
+      table.dash tr td.status .status_icon, table.dash tr th.status .status_icon {
+        vertical-align: middle; }
+  table.dash tr th {
+    color: #859298;
+    font-weight: 500;
+    font-size: 1em;
+    text-transform: uppercase;
+    border-top: 1px solid #e5e8e9; }
+  table.dash tr td {
+    text-align: center; }
+    table.dash tr td .card {
+      text-align: left;
+      margin: 1em 1.5em 1em 0;
+      padding: 1.5em; }
+    table.dash tr td.error {
+      color: #DE3617; }
+    table.dash tr td .info, table.dash tr td .tools {
+      color: #859298; }
+    table.dash tr td .info {
+      font-size: 0.9em;
+      width: 100%; }
+      table.dash tr td .info h3 {
+        margin: 0 0 1em 0;
+        font-size: 1.5em;
+        font-weight: 500;
+        text-align: left;
+        color: #3a4145; }
+        table.dash tr td .info h3.card_title {
+          margin: 0.3em 0 0.7em 0; }
+      table.dash tr td .info td {
+        border-bottom: none;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em; }
+      table.dash tr td .info .info-field-left, table.dash tr td .info .info-field-right {
+        padding: 1.5em;
+        border: 1px solid #ecedef;
+        margin-bottom: 2em; }
+      table.dash tr td .info .info-field-right {
+        margin-left: 1em; }
+      table.dash tr td .info .info-field-left {
+        margin-right: 1em; }
+    table.dash tr td.count_col, table.dash tr td.barcount_col {
+      color: #1d2122;
+      white-space: nowrap; }
+    table.dash tr td.count_col {
+      width: 20%; }
+    table.dash tr td.barcount_col {
+      width: 3em;
+      color: #419bc8; }
+    table.dash tr td .tools, table.dash tr td .delete {
+      padding-top: 1em;
+      padding-bottom: 2em;
+      text-transform: uppercase; }
+    table.dash tr td .tools {
+      text-align: left;
+      font-weight: 600; }
+    table.dash tr td .delete {
+      text-align: right; }
+      table.dash tr td .delete a {
+        color: #DE3617;
+        text-decoration: underline;
+        background: url("../images/icon_trash.svg") 0 center no-repeat;
+        padding-left: 1.5em; }
+    table.dash tr td.error_cell {
+      position: relative; }
+      table.dash tr td.error_cell .clear_error {
+        display: none;
+        position: absolute;
+        right: 0.5em;
+        bottom: 0.8em;
+        font-size: 0.9em;
+        color: #859298; }
+      table.dash tr td.error_cell .error_count {
+        color: #ffffff;
+        background-color: #DE3617;
+        border-radius: 500px;
+        padding: 0.1em 0.5em; }
+        table.dash tr td.error_cell .error_count.zero {
+          background-color: transparent;
+          color: #1d2122; }
+  table.dash tr th.arrow,
+  table.dash tr td.arrow {
+    padding-right: 0;
+    width: 1em;
+    cursor: pointer; }
+  table.dash tr th.instance,
+  table.dash tr td.instance {
+    min-width: 24ch;
+    text-align: left; }
+  table.dash tr.supplemental {
+    background-color: #f9f9fa; }
+    table.dash tr.supplemental tr {
+      border: none; }
+      table.dash tr.supplemental tr td {
+        padding-left: 0;
+        text-align: left; }
+  table.dash a {
+    color: #2590CD;
+    text-decoration: none;
+    font-weight: 600; }
+    table.dash a:hover {
+      text-decoration: underline; }
+  table.dash button {
+    background-color: #419bc8;
+    color: #ffffff;
+    border-radius: 500px;
+    border-width: 0;
+    font-size: 0.9em;
+    padding: 0 9px 2px;
+    vertical-align: top; }
+  table.dash .meter, table.dash .bar {
+    height: 0.75em;
+    border-width: 0; }
+  table.dash .meter {
+    width: 100%;
+    border-radius: 500px 0 0 500px;
+    background: linear-gradient(to right, #82c341, #82c341 60%, #FEE94E 70%, #FEBF3A 80%, #FD9727 90%, #DE3617 95%);
+    position: relative; }
+    table.dash .meter .bar {
+      position: absolute;
+      top: 0;
+      right: -4px;
+      border-radius: 0 500px 500px 0;
+      background-image: url("../images/meter_mask.svg"), linear-gradient(to right, transparent, transparent 10px, #d8dcde 15px);
+      background-position: top left;
+      background-repeat: no-repeat;
+      background-size: auto 110%; }
+  table.dash .meter_strip {
+    min-width: 5em;
+    padding-right: 3em;
+    padding-bottom: 1em; }
+
+.custom-table.pure-table,
+.custom-table.pure-table-horizontal {
+  border: none; }
+  .custom-table.pure-table thead,
+  .custom-table.pure-table-horizontal thead {
+    background-color: #fff !important; }
+    .custom-table.pure-table thead th,
+    .custom-table.pure-table-horizontal thead th {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #859298;
+      font-weight: 100; }
+  .custom-table.pure-table tbody tr,
+  .custom-table.pure-table-horizontal tbody tr {
+    cursor: pointer;
+    min-height: 2em; }
+    .custom-table.pure-table tbody tr:hover,
+    .custom-table.pure-table-horizontal tbody tr:hover {
+      background-color: #f9f9fa; }
+  .custom-table.pure-table tbody td,
+  .custom-table.pure-table-horizontal tbody td {
+    font-weight: 200;
+    font-size: 12px;
+    color: #2b3133; }
+    .custom-table.pure-table tbody td div,
+    .custom-table.pure-table-horizontal tbody td div {
+      min-height: 3em; }
+    .custom-table.pure-table tbody td .pure-button,
+    .custom-table.pure-table-horizontal tbody td .pure-button {
+      min-height: 0 !important;
+      margin: 0 !important; }

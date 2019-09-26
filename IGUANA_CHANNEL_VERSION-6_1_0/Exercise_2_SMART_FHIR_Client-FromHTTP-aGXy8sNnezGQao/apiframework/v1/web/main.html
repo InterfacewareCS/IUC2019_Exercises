@@ -1,0 +1,40 @@
+<h1>Da Vinci CDex Application</h1>
+
+{{^LoggedIn}}
+<div class="main-content">
+   If you would like to generate access tokens for this API, you must first log in using your <span class="apiName">Iguana credentials</span>:
+</div>
+<div class="main-content center">
+   <form>
+      <p>
+         <input placeholder="Username" id="name">
+      </p>
+      <p>
+         <input autocomplete="new-password" placeholder="Password" id="password" type="password">
+      </p>
+      <div class="error" style="display: hide; "></div>      
+      <div><div id="submitLogin" class="button green" style="margin: auto; width : 8em;" >Log in</div></div>
+   </form>
+</div>
+{{/LoggedIn}}
+{{#LoggedIn}}
+
+Active Sessions
+{{#Sessions}}
+<div class="pure-g session-table">
+   <div class="pure-u-1-4">Patient ID:</div>
+   <div class="pure-u-1-4">{{patient}}</div>
+   <div class="pure-u-1-2"><span id="{{patient}}" class="startSession pure-button">Start</span></div>
+</div>
+{{/Sessions}}
+
+<div class="pure-g bottom-button">
+   <div id="setClientId" class="pure-u-1-2">
+      Set Client ID
+   </div>
+   <div id="generateTokens" class="pure-u-1-2">
+      Generate Access Tokens
+   </div>
+</div>
+{{/LoggedIn}}
+

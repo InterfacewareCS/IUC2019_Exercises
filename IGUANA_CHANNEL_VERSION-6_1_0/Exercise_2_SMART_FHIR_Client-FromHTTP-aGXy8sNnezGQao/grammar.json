@@ -1,0 +1,520 @@
+{
+    "ApiId": "91A9BF5CA902BA2B980BB35EDF2B42BA",
+    "Created": 1556064657,
+    "Data": {
+        "Calls": [
+            {
+                "BodyMembers": {},
+                "BodyType": "None",
+                "Description": "Provide redirect URL for the HSPC app \"Launch\" function.",
+                "GetParams": [
+                    {
+                        "Array": false,
+                        "Description": "Issuer",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "iss",
+                        "Required": false
+                    },
+                    {
+                        "Array": false,
+                        "Description": "Launch ID",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "launch",
+                        "Required": false
+                    }
+                ],
+                "Method": "GET",
+                "Path": "hspc/launch",
+                "PostParams": {},
+                "ResponseBodyMembers": {},
+                "ResponseType": null,
+                "Title": "HSPC Launch Redirect URL"
+            },
+            {
+                "BodyMembers": {},
+                "BodyType": "None",
+                "Description": "Provide a redirect landing",
+                "GetParams": [
+                    {
+                        "Array": false,
+                        "Description": "The code supplied by HSPC",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "code",
+                        "Required": false
+                    },
+                    {
+                        "Array": false,
+                        "Description": "The state GUID for the fhir app",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "state",
+                        "Required": false
+                    }
+                ],
+                "Method": "GET",
+                "Path": "hspc/redirect",
+                "PostParams": {},
+                "ResponseBodyMembers": {},
+                "ResponseType": null,
+                "Title": "Redirect Landing Page"
+            },
+            {
+                "BodyMembers": {},
+                "BodyType": "None",
+                "Description": "This is a test resource.",
+                "GetParams": [
+                    {
+                        "Array": false,
+                        "Description": "Token test",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "token",
+                        "Required": false
+                    }
+                ],
+                "Method": "GET",
+                "Path": "test",
+                "PostParams": {},
+                "ResponseBodyMembers": [
+                    {
+                        "Array": false,
+                        "Description": "ResponseTest Test",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "ResponseTest",
+                        "Required": false
+                    }
+                ],
+                "ResponseType": "Structured",
+                "Title": "Test"
+            },
+            {
+                "BodyMembers": {},
+                "BodyType": "None",
+                "Description": "Returns a list of session ID's from the Database.",
+                "GetParams": {},
+                "Method": "GET",
+                "Path": "session",
+                "PostParams": {},
+                "ResponseBodyMembers": [
+                    {
+                        "Array": true,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "session",
+                            "Type": "Type"
+                        },
+                        "Name": "session",
+                        "Required": false
+                    }
+                ],
+                "ResponseType": "Resource",
+                "Title": "Return Session ID"
+            },
+            {
+                "BodyMembers": {},
+                "BodyType": "Parameters",
+                "Description": "Use this API to start a session for a resource ID.",
+                "GetParams": {},
+                "Method": "POST",
+                "Path": "session/start",
+                "PostParams": [
+                    {
+                        "Array": false,
+                        "Description": "The unique Patient ID",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "patient",
+                        "Required": false
+                    }
+                ],
+                "ResponseBodyMembers": [
+                    {
+                        "Array": false,
+                        "Description": "The resource associated with the session",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "patient",
+                        "Required": false
+                    }
+                ],
+                "ResponseType": "Structured",
+                "Title": "Start Session"
+            },
+            {
+                "BodyMembers": {},
+                "BodyType": "None",
+                "Description": "Returns a lookup table with loinc codes.",
+                "GetParams": {},
+                "Method": "GET",
+                "Path": "loinc",
+                "PostParams": {},
+                "ResponseBodyMembers": [
+                    {
+                        "Array": true,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "Loinc",
+                            "Type": "Type"
+                        },
+                        "Name": "Loinc",
+                        "Required": false
+                    }
+                ],
+                "ResponseType": "Resource",
+                "Title": "Loinc lookup"
+            },
+            {
+                "BodyMembers": {},
+                "BodyType": "None",
+                "Description": "",
+                "GetParams": [
+                    {
+                        "Array": false,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "resource_name",
+                        "Required": false
+                    }
+                ],
+                "Method": "GET",
+                "Path": "SearchParam",
+                "PostParams": {},
+                "ResponseBodyMembers": [
+                    {
+                        "Array": true,
+                        "Description": "return array of search params",
+                        "MemberType": {
+                            "Name": "SearchParam",
+                            "Type": "Type"
+                        },
+                        "Name": "SearchParam",
+                        "Required": false
+                    }
+                ],
+                "ResponseType": "Resource",
+                "Title": "Read search params"
+            },
+            {
+                "BodyMembers": [
+                    {
+                        "Array": false,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "SearchQuery",
+                            "Type": "Type"
+                        },
+                        "Name": "SearchQuery",
+                        "Required": false
+                    }
+                ],
+                "BodyType": "Resource",
+                "Description": "Supply a search query with parameters. Returns FHIR Resource if found ",
+                "GetParams": {},
+                "Method": "POST",
+                "Path": "session/search",
+                "PostParams": {},
+                "ResponseBodyMembers": [
+                    {
+                        "Array": false,
+                        "Description": "The resource name",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "fResource",
+                        "Required": false
+                    }
+                ],
+                "ResponseType": "Structured",
+                "Title": "Search Query"
+            }
+        ],
+        "Types": [
+            {
+                "Description": "Table containing access ID token related data",
+                "Members": [
+                    {
+                        "Array": false,
+                        "Description": "The Access token",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "access_token",
+                        "Required": false
+                    },
+                    {
+                        "Array": false,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "need_patient_banner",
+                        "Required": false
+                    },
+                    {
+                        "Array": false,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "ClientAccessId",
+                        "Required": false
+                    },
+                    {
+                        "Array": false,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "Numeric",
+                            "Type": "Primitive"
+                        },
+                        "Name": "Id",
+                        "Required": false
+                    },
+                    {
+                        "Array": false,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "token_type",
+                        "Required": false
+                    },
+                    {
+                        "Array": false,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "expires_in",
+                        "Required": false
+                    },
+                    {
+                        "Array": false,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "patient",
+                        "Required": false
+                    },
+                    {
+                        "Array": false,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "refresh_token",
+                        "Required": false
+                    },
+                    {
+                        "Array": false,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "id_token",
+                        "Required": false
+                    },
+                    {
+                        "Array": false,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "scope",
+                        "Required": false
+                    }
+                ],
+                "Name": "session",
+                "Tags": [
+                    "Generic"
+                ]
+            },
+            {
+                "Description": "table containing loinc codes and values",
+                "Members": [
+                    {
+                        "Array": false,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "ClinicalNoteType",
+                        "Required": false
+                    },
+                    {
+                        "Array": false,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "GeneralCode",
+                        "Required": false
+                    },
+                    {
+                        "Array": false,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "ValueSetName",
+                        "Required": false
+                    },
+                    {
+                        "Array": false,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "Reference",
+                        "Required": false
+                    }
+                ],
+                "Name": "Loinc",
+                "Tags": [
+                    "Generic"
+                ]
+            },
+            {
+                "Description": "A FHIR search parameter",
+                "Members": [
+                    {
+                        "Array": false,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "type",
+                        "Required": false
+                    },
+                    {
+                        "Array": false,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "name",
+                        "Required": false
+                    },
+                    {
+                        "Array": false,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "documentation",
+                        "Required": false
+                    }
+                ],
+                "Name": "SearchParam",
+                "Tags": [
+                    "Generic"
+                ]
+            },
+            {
+                "Description": "",
+                "Members": [
+                    {
+                        "Array": false,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "name",
+                        "Required": false
+                    },
+                    {
+                        "Array": false,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "value",
+                        "Required": false
+                    }
+                ],
+                "Name": "Parameter",
+                "Tags": [
+                    "Generic"
+                ]
+            },
+            {
+                "Description": "",
+                "Members": [
+                    {
+                        "Array": false,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "SearchBase",
+                        "Required": false
+                    },
+                    {
+                        "Array": true,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "Parameter",
+                            "Type": "Type"
+                        },
+                        "Name": "Parameters",
+                        "Required": false
+                    }
+                ],
+                "Name": "SearchQuery",
+                "Tags": [
+                    "Generic"
+                ]
+            }
+        ]
+    },
+    "Description": "Basic fhir-app API.",
+    "IsPublic": 0,
+    "Modified": 1557005570,
+    "Name": "fhir-app",
+    "SchemaVersion": 3,
+    "Type": "REST",
+    "UserId": "97785659FE007E0D244A5F71DE2C8D98"
+}

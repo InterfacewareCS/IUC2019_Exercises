@@ -1,0 +1,22 @@
+<main>
+   <header>
+      <div class="navbar">
+         <a class="logo-link" href="">
+            <div class="logo-container">
+               <img class="nav-logo" src="img/iguana_logo.png"/>
+               <div class="logo-trailer">FHIR App</div>
+            </div>
+         </a>
+         
+         <div class="cookie" id="cookie"></div>
+         <div class="rightTop">
+            {{#UserName}}
+            Logged in as {{UserName}}. <span id="logout" class="button-flat grey">Logout</span>
+            {{/UserName}}
+            {{^UserName}}
+            You are not logged in.
+            {{/UserName}}
+         </div>
+    </header>
+<div id="content-target" class="primary"></div>
+</main>

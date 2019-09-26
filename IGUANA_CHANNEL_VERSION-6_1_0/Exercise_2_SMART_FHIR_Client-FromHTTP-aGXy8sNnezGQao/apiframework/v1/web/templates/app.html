@@ -1,0 +1,21 @@
+<h1>Set The Client ID</h1>
+
+<form class="pure-form pure-form-stacked">
+    <fieldset>
+        <legend>Enter your client ID.</legend>
+
+        <input id="ClientId" type="text">
+        <span class="pure-form-message">Enter the Client ID provided by HSPC.</span>
+
+        <div id="saveClientId"class="pure-button pure-button-primary">Save</div>
+    </fieldset>
+</form>
+
+
+{{#LoggedIn}}
+<div class="pure-g bottom-button">
+   <div id="goToMain" class="pure-u-1">
+      Main Page
+   </div>
+</div>
+{{/LoggedIn}}

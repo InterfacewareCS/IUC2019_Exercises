@@ -1,0 +1,33 @@
+<channel
+   name="Exercise1: CHN3: ADT To FHIR"
+   guid="CBECCFB9E98F9AE24D7FEAF5794F274C"
+   description="This channel parses an incoming HL7 ADT message and maps it to an outbound HL7 FHIR Resource."
+   start_automatically="true"
+   logging_level="1"
+   use_message_filter="true">
+   <to_channel>
+      <dequeue_list>
+         <dequeue
+            source_name="Exercise1: CHN1: HL7 From File"
+            dequeue_guid="8FE0E45330EEEF433E83C77015097A89"/>
+         <dequeue
+            source_name="Exercise1: CHN2: HL7 Receiver"
+            dequeue_guid="94AF496E9CF5D6C56E60BD413F871745"/>
+      </dequeue_list>
+   </to_channel>
+   <from_channel/>
+   <message_filter
+      filter_after_logging="false"
+      log_pre_post_filter_message="false"
+      keep_vmd_updated="false"
+      original_vmd_path=""
+      filter_vmd_path=""
+      transformation_mode="0"
+      scripted_transformation_configuration_name="default"
+      error_handling="0"
+      use_translator_filter="true"
+      translator_guid="CHN3_ADT_To_FHIR_Mapper-Filter-rZ6mttCTf7G7Ok"
+      translator_commit_id="50239c90308833f75989ca4d8b1a92622ed53d88"
+      translator_commit_comment="Import Translators: import">
+   </message_filter>
+</channel>

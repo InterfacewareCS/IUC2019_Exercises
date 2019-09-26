@@ -1,0 +1,40 @@
+<h1>Patient Portal</h1>
+
+<table class="custom-table pure-table pure-table-bordered">
+   <tbody>
+      <tr><td class="table-key">ID</td><td class="table-value">{{id}}</td></tr>
+      <tr>
+         <td class="table-key">Name</td>
+         <td class="table-value">{{#name}}{{family}}, {{#given}}{{.}} {{/given}}{{/name}}</td>
+      </tr>
+      <tr><td class="table-key">Date of Birth</td><td class="table-value">{{birthDate}}</td></tr>
+      <tr><td class="table-key">Gender</td><td class="table-value">{{gender}}</td></tr>
+   </tbody>
+</table>
+
+<div class="card card-blue-lighter">
+   <div class="card-body">
+      <div class="form-title">Perform a Query</div>
+
+      <div class="input-container pure-g">
+         <div class="input-field pure-u-1-2">
+            <input id="SearchBase" class="form-input" type="text">
+         </div>
+         <div class="input-field pure-u-1-2">
+            <div id="setSearchBase" class="pure-button">Set Search Base</div>
+         </div>
+      </div>
+
+      <div class="form-entry">
+         <div id="searchParamContainer"></div>
+      </div>
+
+      <div class="form-entry">
+         <div id="addParam" class="pure-button">Add Parameter</div>
+      </div>
+
+      <div class="form-entry">
+         <div id="submitQuery" class="pure-button pure-button-primary">Submit</div>
+      </div>
+   </div>
+</div>

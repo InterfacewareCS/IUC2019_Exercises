@@ -1,0 +1,16 @@
+<div class="param input-container pure-g">
+   <div class="input-field pure-u-1-4">
+      <select class="param-name">
+         {{#SearchParams}}
+         <option value="{{name}}">{{name}}</option>
+         {{/SearchParams}}
+      </select>
+   </div>
+   <div class="pure-u-1-4">=</div>
+   <div class="input-field pure-u-1-4">
+      <input class="form-input param-val" type="text">
+   </div>
+   <div class="input-field pure-u-1-4">
+      <div class="form-input param-remove pure-button">Remove</div>
+   </div>
+</div>

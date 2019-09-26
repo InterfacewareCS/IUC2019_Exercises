@@ -1,0 +1,28 @@
+<channel
+   name="Exercise4: SMART FHIR Client"
+   guid="45001F09739E8450883481C01CEB6D6A"
+   description="FHIR Client that Queries a FHIR Server According to some sample Da Vinci Use cases."
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_channel>
+   </to_channel>
+   <from_http
+      type="mapper"
+      guid="Exercise_2_SMART_FHIR_Client-FromHTTP-aGXy8sNnezGQao"
+      commit_id="058b218e1c3bc519ffab772bf4b1292d0a5dd24a"
+      commit_comment="Import Translators: import"
+      mapper_url_path="fhir-app/"
+      instance_count="2"/>
+   <message_filter
+      filter_after_logging="false"
+      log_pre_post_filter_message="true"
+      keep_vmd_updated="false"
+      original_vmd_path=""
+      filter_vmd_path=""
+      transformation_mode="0"
+      scripted_transformation_configuration_name="default"
+      error_handling="0"
+      use_translator_filter="true">
+   </message_filter>
+</channel>

@@ -1,0 +1,36 @@
+<h1>{{Name}}</h1>
+<div class="main-content description">Create access tokens below. To use the token, pass it in the Authorization Header of your HTTP requests to this API using the following format:</div>
+<div class="main-content codeBlock">Authorization: Bearer <strong>&lt;Access Token&gt;</strong></div>
+<div class="main-content">
+	<input id="tokenInput" class="medium" type="text" placeholder="Enter a unique name for a new Access Token..."><span id="generateToken" class="button green">Generate</span>
+</div>
+<div class="main-content description">
+</div>
+<div class="main-content">
+   <table id="token-list">
+      <tr>
+         <th><span class="apiName">Access Token Name</span></th>
+         <th><span class="apiName">Actions</span></th>
+      </tr>
+      {{#Tokens}}
+      <tr id="{{Id}}" class="tokenRow">
+         <td class="tokenDisplay">
+            <div class="tokenRowName">{{Name}}</div>
+            <div class="tokenRowShow" style="display: none;">
+               <input type="text" class="tokenShowBox" value={{Token}} readonly>
+            </div>
+         </td>
+
+         <td class="actions">
+            <span class="tokenShowButton button-flat blue">Show/Hide</span>
+            <span class="tokenRemoveButton button-flat red">Remove</span>
+         </td>
+      </tr>
+      {{/Tokens}}
+   </table>
+</div>
+<div class="main-content description">
+</div>
+<div id="backToMain" class="bottom-button">
+   <span class="go-left-button">&lt;</span>Back to Main Page
+</div>

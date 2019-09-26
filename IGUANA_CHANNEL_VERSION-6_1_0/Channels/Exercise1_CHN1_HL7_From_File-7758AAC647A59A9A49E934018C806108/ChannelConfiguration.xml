@@ -1,0 +1,42 @@
+<channel
+   name="Exercise1: CHN1: HL7 From File"
+   guid="7758AAC647A59A9A49E934018C806108"
+   description="This channel polls a folder for HL7 messages and pushes them to the ADT to FHIR Filter Queue."
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_channel>
+   </to_channel>
+   <from_file
+      file_type="HL7"
+      prepend_file_info="false"
+      eof_char=""
+      poll_time="10000"
+      max_message_size="15728640"
+      source_dir="C:/FHIR/ADT/"
+      source_file_extension="txt"
+      archive_processed_files="true"
+      processed_dir="C:/FHIR/PROCESS/"
+      error_dir="C:/FHIR/ERROR/"
+      ignored_segments=""
+      segment_delimiter="0x0D"
+      message_delimiter="0x0A"
+      minimum_file_age="0"
+      escape_8bit="false"
+      escape_char=" "
+      ftp_username="admin"
+      ftp_password="LINQ3t+lhcGjCwBgU/uvupDjW5EaJNcxD7sGhhxi/B8="
+      sftp_authentication_method="user_password"
+      use_ftp="false"/>
+   <message_filter
+      filter_after_logging="false"
+      log_pre_post_filter_message="true"
+      keep_vmd_updated="false"
+      original_vmd_path=""
+      filter_vmd_path=""
+      transformation_mode="0"
+      scripted_transformation_configuration_name="default"
+      error_handling="0"
+      use_translator_filter="true">
+   </message_filter>
+</channel>
