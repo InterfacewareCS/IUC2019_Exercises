@@ -1,0 +1,27 @@
+<channel
+   name="Exercise2: API Server"
+   guid="97C130EEB8977C7F67AC7E3DD11A53B2"
+   description="Demo and exercise for Juggling Internal &amp; External API&apos;s with Iguana presentation at IUC2019. For all inquiries please contact Paul Le at paul.le@interfaceare.com"
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_channel>
+   </to_channel>
+   <from_http
+      type="mapper"
+      guid="IUC2019_Exercise-FromHTTP-L68H6ZwmTMA1yu"
+      commit_id="1c543e5ae6f061d9a822c591eb6a59cfba83325d"
+      commit_comment="asdf"
+      mapper_url_path="iuc/"/>
+   <message_filter
+      filter_after_logging="false"
+      log_pre_post_filter_message="true"
+      keep_vmd_updated="false"
+      original_vmd_path=""
+      filter_vmd_path=""
+      transformation_mode="0"
+      scripted_transformation_configuration_name="default"
+      error_handling="0"
+      use_translator_filter="true">
+   </message_filter>
+</channel>

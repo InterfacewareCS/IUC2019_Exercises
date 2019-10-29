@@ -1,0 +1,31 @@
+<h1>{{Name}}</h1>
+<div class="main-content">This is the endpoint for the <span class="apiName">{{Name}}</span> API.</div>
+<div class="main-content">
+   <p>{{Description}}</p>
+</div>
+<div class="main-content">You can <a class="apiLink" href={{DesignerLink}} target="blank">view the complete 
+   documentation in the Iguana API Designer</a>.
+</div>
+{{^LoggedIn}}
+<div class="main-content">
+   If you would like to generate access tokens for this API, you must first log in using your <span class="apiName">Iguana credentials</span>:
+</div>
+<div class="main-content center">
+   <form>
+      <p>
+         <input placeholder="Username" id="name">
+      </p>
+      <p>
+         <input autocomplete="new-password" placeholder="Password" id="password" type="password">
+      </p>
+      <div class="error" style="display: hide; "></div>      
+      <div><div id="submitLogin" class="button green" style="margin: auto; width : 8em;" >Log in</div></div>
+   </form>
+</div>
+{{/LoggedIn}}
+{{#LoggedIn}}
+<div id="generateTokens" class="bottom-button">
+   Generate Access Tokens<span class="go-right-button">></span>
+</div>
+{{/LoggedIn}}
+

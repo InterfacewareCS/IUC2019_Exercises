@@ -1,0 +1,83 @@
+.apiName {
+   color: #82c341;
+}
+
+.apiLink {
+   color: #4ab1e4;
+}
+
+textarea#SampleMessage,
+div.MessageResponse {
+   width: 100%;
+   height : 10em;
+   overflow-y: scroll;
+   font-family: monospace;
+   white-space: pre;
+   border : 1px solid gray;
+}
+
+div.bottom-button {
+   text-align: center;
+   position: absolute;
+   bottom: 0;
+   margin-left: -30px;
+   width: 100%;
+   border-top-color:black;
+   border: solid;
+   border-width: 1px 0 0 0;
+   padding-top: 1.5em;
+   padding-bottom: 1.5em;
+   background: #e5e6e6;
+   cursor: pointer;
+   color: #414042;
+}
+
+div.bottom-button:hover {
+   background: #f2f3f3;
+}
+
+div.codeBlock{
+   display: block;
+   background: #eeeeee;
+   font-family: monospace;
+   font-size: 1em;
+   border-style: solid;
+   border-width: 2px;
+   border-color: #dddddd;
+   border-radius: 5px;
+   white-space: pre;
+   text-align: left;
+   padding: 1em;
+}
+
+table#token-list {
+   width: 100%;
+   table-layout: fixed;
+   border: 1px solid #cbd0d3;
+}
+
+table#token-list th, 
+table#token-list td {
+    border: 1px solid #cbd0d3;
+    padding: 8px 14px;
+}
+
+table#token-list th {
+   text-align: center;
+}
+
+table#token-list td.tokenDisplay {
+   text-align: left;
+}
+
+table#token-list td.actions {
+   text-align: center;
+}
+
+input.tokenShowBox {
+   width: 100%;
+}
+
+table#token-list td.actions > span {
+   margin: 0 10 0 10;
+}
