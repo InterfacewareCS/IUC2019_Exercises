@@ -1,0 +1,27 @@
+<channel
+   name="Exercise3: 2 - CDA Source"
+   guid="E3D47CFEC5254C64053C023F12B69093"
+   description="Demo and exercise for How to Rapidly Scale Your Integrations Using API&apos;s Exercise presentation at IUC2019. For all inquiries please contact Paul Le at paul.le@interfaceare.com or Amandeep Aujla at amandeep.aujla@interfaceware.com&#xD;&#xA;&#xD;&#xA;This channel generates a random CDA document every 10 seconds"
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_channel>
+   </to_channel>
+   <from_mapper
+      guid="Random_CDA_Generator-From-sPZnKKhT7C4I0Z"
+      commit_id="e8fd71afa45a3e00505b9c596ca1da897a96fcea"
+      commit_comment="Import Translators: asdf"
+      poll_time="10000">
+   </from_mapper>
+   <message_filter
+      filter_after_logging="false"
+      log_pre_post_filter_message="true"
+      keep_vmd_updated="false"
+      original_vmd_path=""
+      filter_vmd_path=""
+      transformation_mode="0"
+      scripted_transformation_configuration_name="default"
+      error_handling="0"
+      use_translator_filter="true">
+   </message_filter>
+</channel>

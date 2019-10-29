@@ -1,0 +1,15 @@
+{
+    "LocalDependencies": [
+        "utils/database.lua"
+    ],
+    "LuaDependencies": [],
+    "OtherDependencies": [
+        "PatientDataIUC2019.sqlite"
+    ],
+    "timestamp": "1571603259",
+    "version_info": {
+        "build": 0,
+        "major": 6,
+        "minor": 0
+    }
+}

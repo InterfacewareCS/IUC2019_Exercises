@@ -48,10 +48,10 @@ end
 
 local function ranNameAndSex(PID)
    if math.random(2) == 1 then
-      PID[8] = 'male'
+      PID[8] = 'M'
       PID[5][1][2] = ranChoose(data.MaleNames)
    else   
-      PID[8] = 'female'
+      PID[8] = 'F'
       PID[5][1][2] = ranChoose(data.FemaleNames)      
    end
 end

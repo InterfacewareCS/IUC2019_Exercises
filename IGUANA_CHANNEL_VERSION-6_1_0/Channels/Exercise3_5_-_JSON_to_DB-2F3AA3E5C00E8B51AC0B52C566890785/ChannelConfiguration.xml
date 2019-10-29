@@ -1,0 +1,19 @@
+<channel
+   name="Exercise3: 5 - JSON to DB"
+   guid="2F3AA3E5C00E8B51AC0B52C566890785"
+   description="Demo and exercise for How to Rapidly Scale Your Integrations Using API&apos;s Exercise presentation at IUC2019. For all inquiries please contact Paul Le at paul.le@interfaceare.com or Amandeep Aujla at amandeep.aujla@interfaceware.com&#xD;&#xA;&#xD;&#xA;This channel accepts a JSON message and writes the data to a SQLite database"
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_mapper
+      guid="IUC2019_To_Database-To-AiY3R27OAcQc3s"
+      commit_id="1c543e5ae6f061d9a822c591eb6a59cfba83325d"
+      commit_comment="asdf">
+      <dequeue_list>
+         <dequeue
+            source_name="Exercise3: 3 - HL7 to JSON"
+            dequeue_guid="584898B5B480440BE303E54C9FDFAB1B"/>
+      </dequeue_list>
+   </to_mapper>
+   <from_channel/>
+</channel>

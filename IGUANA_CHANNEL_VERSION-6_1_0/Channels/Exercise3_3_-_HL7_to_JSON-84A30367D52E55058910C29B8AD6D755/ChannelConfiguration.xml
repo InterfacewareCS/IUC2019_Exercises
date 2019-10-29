@@ -1,0 +1,32 @@
+<channel
+   name="Exercise3: 3 - HL7 to JSON"
+   guid="84A30367D52E55058910C29B8AD6D755"
+   description="Demo and exercise for How to Rapidly Scale Your Integrations Using API&apos;s Exercise presentation at IUC2019. For all inquiries please contact Paul Le at paul.le@interfaceare.com or Amandeep Aujla at amandeep.aujla@interfaceware.com&#xD;&#xA;&#xD;&#xA;This channel converts an HL7 message to a JSON object"
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="true">
+   <to_channel>
+   </to_channel>
+   <from_llp_listener
+      original_vmd_path=""
+      ack_vmd_path="/Users/paul.le/Documents/iNTERFACEWARE/Iguana/mda-iguana/autoack.vmd"
+      port="5145"
+      connection_timeout="30"
+      unlimited_connection_timeout="false"
+      keep_vmd_updated="false"
+      ack_style="fast"/>
+   <message_filter
+      filter_after_logging="false"
+      log_pre_post_filter_message="true"
+      keep_vmd_updated="false"
+      original_vmd_path=""
+      filter_vmd_path=""
+      transformation_mode="0"
+      scripted_transformation_configuration_name="default"
+      error_handling="0"
+      use_translator_filter="true"
+      translator_guid="IUC2019_HL7_to_JSON-Filter-BzBxB7dnsNK4Vr"
+      translator_commit_id="cb7dfde83155585d82d33364bd2ed83f6e8711f8"
+      translator_commit_comment="asdf">
+   </message_filter>
+</channel>

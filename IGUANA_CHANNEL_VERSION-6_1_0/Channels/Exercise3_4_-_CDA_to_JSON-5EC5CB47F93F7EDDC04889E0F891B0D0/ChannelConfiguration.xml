@@ -1,0 +1,30 @@
+<channel
+   name="Exercise3: 4 - CDA to JSON"
+   guid="5EC5CB47F93F7EDDC04889E0F891B0D0"
+   description="Demo and exercise for How to Rapidly Scale Your Integrations Using API&apos;s Exercise presentation at IUC2019. For all inquiries please contact Paul Le at paul.le@interfaceare.com or Amandeep Aujla at amandeep.aujla@interfaceware.com&#xD;&#xA;&#xD;&#xA;This channel converts a CDA document and maps certain fields to a JSON object"
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="true">
+   <to_channel>
+      <dequeue_list>
+         <dequeue
+            source_name="Exercise3: 2 - CDA Source"
+            dequeue_guid="996252F1177E74C0E2856703030CF15F"/>
+      </dequeue_list>
+   </to_channel>
+   <from_channel/>
+   <message_filter
+      filter_after_logging="false"
+      log_pre_post_filter_message="true"
+      keep_vmd_updated="false"
+      original_vmd_path=""
+      filter_vmd_path=""
+      transformation_mode="0"
+      scripted_transformation_configuration_name="default"
+      error_handling="0"
+      use_translator_filter="true"
+      translator_guid="CDA_Parser-Filter-yd2rgfF6bRsTmZ"
+      translator_commit_id="ea033928fd7baa6018f0ec8f2ca048b69da6d834"
+      translator_commit_comment="asdf">
+   </message_filter>
+</channel>
