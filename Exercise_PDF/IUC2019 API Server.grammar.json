@@ -1,0 +1,270 @@
+{
+    "ApiId": "6AB56E5DD500F51F56C9BFF046A3813C",
+    "Created": 1567536490,
+    "Data": {
+        "Calls": [
+            {
+                "BodyMembers": [
+                    {
+                        "Array": false,
+                        "Description": null,
+                        "MemberType": {
+                            "Name": "Person",
+                            "Type": "Type"
+                        },
+                        "Name": "Person",
+                        "Required": false
+                    }
+                ],
+                "BodyType": "Resource",
+                "Description": "Create a new person in the database.",
+                "GetParams": {},
+                "Method": "POST",
+                "Path": "person",
+                "PostParams": {},
+                "ResponseBodyMembers": [
+                    {
+                        "Array": false,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "Response",
+                            "Type": "Type"
+                        },
+                        "Name": "Response",
+                        "Required": false
+                    }
+                ],
+                "ResponseType": "Resource",
+                "Title": "Create Person"
+            },
+            {
+                "BodyMembers": [
+                    {
+                        "Array": false,
+                        "Description": "Person's information.",
+                        "MemberType": {
+                            "Name": "Person",
+                            "Type": "Type"
+                        },
+                        "Name": "Person",
+                        "Required": true
+                    }
+                ],
+                "BodyType": "Resource",
+                "Description": "Update the person's information in the database",
+                "GetParams": {},
+                "Method": "PUT",
+                "Path": "person",
+                "PostParams": {},
+                "ResponseBodyMembers": [
+                    {
+                        "Array": false,
+                        "Description": "",
+                        "MemberType": {
+                            "Name": "Response",
+                            "Type": "Type"
+                        },
+                        "Name": "Response",
+                        "Required": false
+                    }
+                ],
+                "ResponseType": "Resource",
+                "Title": "Update Person"
+            },
+            {
+                "BodyMembers": {},
+                "BodyType": "None",
+                "Description": "Returns a person's information based on their ID number.",
+                "GetParams": [
+                    {
+                        "Array": false,
+                        "Description": "A human identifier for this person",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "identifier",
+                        "Required": true
+                    }
+                ],
+                "Method": "GET",
+                "Path": "person",
+                "PostParams": {},
+                "ResponseBodyMembers": [
+                    {
+                        "Array": false,
+                        "Description": "Information describing a person.",
+                        "MemberType": {
+                            "Name": "Person",
+                            "Type": "Type"
+                        },
+                        "Name": "Person",
+                        "Required": true
+                    }
+                ],
+                "ResponseType": "Resource",
+                "Title": "Get Person"
+            },
+            {
+                "BodyMembers": {},
+                "BodyType": "None",
+                "Description": "Get a group of people from the database",
+                "GetParams": [
+                    {
+                        "Array": false,
+                        "Description": "Limit of people to return",
+                        "MemberType": {
+                            "Name": "Numeric",
+                            "Type": "Primitive"
+                        },
+                        "Name": "Limit",
+                        "Required": true
+                    }
+                ],
+                "Method": "GET",
+                "Path": "people",
+                "PostParams": {},
+                "ResponseBodyMembers": [
+                    {
+                        "Array": false,
+                        "Description": "A group of people",
+                        "MemberType": {
+                            "Name": "People",
+                            "Type": "Type"
+                        },
+                        "Name": "People",
+                        "Required": false
+                    }
+                ],
+                "ResponseType": "Resource",
+                "Title": "Get People"
+            }
+        ],
+        "Types": [
+            {
+                "Description": "Demographics and administrative information about a person independent of a specific health-related context.",
+                "Members": [
+                    {
+                        "Array": false,
+                        "Description": "A human identifier for this person",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "identifier",
+                        "Required": false
+                    },
+                    {
+                        "Array": false,
+                        "Description": "A name associated with the person",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "name",
+                        "Required": false
+                    },
+                    {
+                        "Array": false,
+                        "Description": "A contact detail for the person",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "telecom",
+                        "Required": false
+                    },
+                    {
+                        "Array": false,
+                        "Description": "male | female | other | unknown",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "gender",
+                        "Required": false
+                    },
+                    {
+                        "Array": false,
+                        "Description": "The date on which the person was born",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "birthDate",
+                        "Required": false
+                    },
+                    {
+                        "Array": false,
+                        "Description": "One or more addresses for the person",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "address",
+                        "Required": false
+                    }
+                ],
+                "Name": "Person",
+                "Tags": [
+                    "Generic"
+                ]
+            },
+            {
+                "Description": "Generic response when web server responds.",
+                "Members": [
+                    {
+                        "Array": false,
+                        "Description": "true | false",
+                        "MemberType": {
+                            "Name": "Boolean",
+                            "Type": "Primitive"
+                        },
+                        "Name": "Status",
+                        "Required": true
+                    },
+                    {
+                        "Array": false,
+                        "Description": "Description of result",
+                        "MemberType": {
+                            "Name": "String",
+                            "Type": "Primitive"
+                        },
+                        "Name": "Description",
+                        "Required": false
+                    }
+                ],
+                "Name": "Response",
+                "Tags": [
+                    "Generic"
+                ]
+            },
+            {
+                "Description": "Returns a list of people in the database.",
+                "Members": [
+                    {
+                        "Array": true,
+                        "Description": "A group of persons",
+                        "MemberType": {
+                            "Name": "Person",
+                            "Type": "Type"
+                        },
+                        "Name": "People",
+                        "Required": false
+                    }
+                ],
+                "Name": "People",
+                "Tags": [
+                    "Generic"
+                ]
+            }
+        ]
+    },
+    "Description": "Demo and exercise for Juggling Internal & External APIs with Iguana presentation at IUC2019. For all inquiries please contact Paul Le at paul.le@interfaceare.com.",
+    "IsPublic": 0,
+    "Modified": 1571588627,
+    "Name": "IUC2019 API Server",
+    "SchemaVersion": 3,
+    "Type": "REST",
+    "UserId": "420F095ADD023BF0B9F6FEF416193ADD"
+}
