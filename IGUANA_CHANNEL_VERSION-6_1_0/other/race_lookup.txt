@@ -1,0 +1,5 @@
+Martian,XX-ET
+Mixed,XX-MX
+AI,XX-AI
+EU,XX-EU
+Unknown,XX-NA

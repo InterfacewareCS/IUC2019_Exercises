@@ -1,0 +1,19 @@
+{
+    "LocalDependencies": [
+        "main_example.lua",
+        "mappings.lua",
+        "mappings_example.lua"
+    ],
+    "LuaDependencies": [],
+    "OtherDependencies": [
+        "demo.vmd",
+        "race_lookup.txt",
+        "sample_data.txt"
+    ],
+    "timestamp": "1558717276",
+    "version_info": {
+        "build": 0,
+        "major": 6,
+        "minor": 0
+    }
+}
