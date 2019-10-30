@@ -1,0 +1,18 @@
+<channel
+   name="Exercise1A: CH2: HL7 Receiver"
+   guid="92F85B2B1172CC28BCBE40DE80FADEC8"
+   description="This channel receives incoming HL7 messages over the specified LLP port.&#xD;&#xA;&#xD;&#xA;For all inquiries, please contact Marcus Walters at marcus.walters@interfaceware.com"
+   start_automatically="true"
+   logging_level="1"
+   use_message_filter="false">
+   <to_channel>
+   </to_channel>
+   <from_llp_listener
+      original_vmd_path=""
+      ack_vmd_path="/Applications/iNTERFACEWARE-Iguana.app/Contents/iNTERFACEWARE-Iguana/autoack.vmd"
+      port="5145"
+      connection_timeout="30"
+      unlimited_connection_timeout="false"
+      keep_vmd_updated="false"
+      ack_style="fast"/>
+</channel>

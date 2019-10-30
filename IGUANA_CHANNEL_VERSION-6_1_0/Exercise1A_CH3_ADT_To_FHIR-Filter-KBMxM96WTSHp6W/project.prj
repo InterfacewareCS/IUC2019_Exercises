@@ -1,0 +1,28 @@
+{
+    "LocalDependencies": [
+        "ADT_FHIR_PATIENT_MAP.lua",
+        "config.lua",
+        "fhir/resources/utilities/json.lua",
+        "handler.lua"
+    ],
+    "LuaDependencies": [
+        "FILE.FILEio",
+        "dateparse",
+        "fhir.db",
+        "fhir.dbInitializer",
+        "fhir.profiler",
+        "fhir.resource",
+        "fhir.resourceHelp"
+    ],
+    "OtherDependencies": [
+        "fhir/profiles/3.0.0/resources.json",
+        "fhir/profiles/3.0.0/types.json",
+        "hl7.vmd"
+    ],
+    "timestamp": "1572458023",
+    "version_info": {
+        "build": 0,
+        "major": 6,
+        "minor": 0
+    }
+}

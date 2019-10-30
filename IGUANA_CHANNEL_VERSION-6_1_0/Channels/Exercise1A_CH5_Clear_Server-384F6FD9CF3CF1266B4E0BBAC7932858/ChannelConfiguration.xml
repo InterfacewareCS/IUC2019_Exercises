@@ -1,0 +1,27 @@
+<channel
+   name="Exercise1A: CH5: Clear Server"
+   guid="384F6FD9CF3CF1266B4E0BBAC7932858"
+   description="This channel connects to a database and deletes all the records existing in it. The server address can be changed by modifying the FHIR Server Url located in the Iguana Environment Variables.&#xD;&#xA;&#xD;&#xA;For all inquiries, please contact Marcus Walters at marcus.walters@interfaceware.com"
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_channel>
+   </to_channel>
+   <from_mapper
+      guid="Exercise1A_CH5_Clear_Server-From-E9rQFIUrSNLnrF"
+      commit_id="e644567d3f7e675f929d76a309c960963cbc3141"
+      commit_comment="commit"
+      poll_time="10000">
+   </from_mapper>
+   <message_filter
+      filter_after_logging="false"
+      log_pre_post_filter_message="true"
+      keep_vmd_updated="false"
+      original_vmd_path=""
+      filter_vmd_path=""
+      transformation_mode="0"
+      scripted_transformation_configuration_name="default"
+      error_handling="0"
+      use_translator_filter="true">
+   </message_filter>
+</channel>

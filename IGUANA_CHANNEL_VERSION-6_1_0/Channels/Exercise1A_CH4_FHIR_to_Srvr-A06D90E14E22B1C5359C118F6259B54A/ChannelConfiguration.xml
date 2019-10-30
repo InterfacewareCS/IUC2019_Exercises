@@ -1,0 +1,19 @@
+<channel
+   name="Exercise1A: CH4: FHIR to Srvr"
+   guid="A06D90E14E22B1C5359C118F6259B54A"
+   description="This channel posts a FHIR message to the supplied server. These can be changed by modifying the environment variables in the system settings.&#xD;&#xA;&#xD;&#xA;For all inquiries, please contact Marcus Walters at marcus.walters@interfaceware.com"
+   start_automatically="true"
+   logging_level="1"
+   use_message_filter="false">
+   <to_mapper
+      guid="Exercise1A_CH4_FHIR_to_Srvr-To-Fm4jphj6s7WQaD"
+      commit_id="3217b083fde005144b381a25c8543c307569b58f"
+      commit_comment="import">
+      <dequeue_list>
+         <dequeue
+            source_name="Exercise1A: CH3: ADT To FHIR"
+            dequeue_guid="9A1CFD49FD7B66A723F0E739C873CDC3"/>
+      </dequeue_list>
+   </to_mapper>
+   <from_channel/>
+</channel>

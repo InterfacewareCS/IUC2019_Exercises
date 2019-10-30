@@ -35,7 +35,7 @@ Net.doPost = function(Url, Body, Format, header)
       url  = Url,
       body = Body,
       parameters = {_format = Format},
-      headers = header,
+      headers = {header},
       live = true
    }
    trace(PostResult, PostCode, PostHeaders)

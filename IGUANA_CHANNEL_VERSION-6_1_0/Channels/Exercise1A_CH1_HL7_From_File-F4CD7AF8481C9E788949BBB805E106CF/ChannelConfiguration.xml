@@ -1,0 +1,56 @@
+<channel
+   name="Exercise1A: CH1: HL7 From File"
+   guid="F4CD7AF8481C9E788949BBB805E106CF"
+   description="This channel polls a folder for HL7 messages and pushes them to the ADT to FHIR Filter Queue.&#xD;&#xA;&#xD;&#xA;For all inquiries, please contact Marcus Walters at marcus.walters@interfaceware.com"
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_llp_client
+      remote_host="localhost"
+      remote_port="5145"
+      wait_for_ack="true"
+      ack_timeout="10000"
+      ack_verification_type="0"
+      ack_vmd_path="/Applications/iNTERFACEWARE-Iguana.app/Contents/iNTERFACEWARE-Iguana/ack_verify.vmd"
+      original_vmd_path="/Applications/iNTERFACEWARE-Iguana.app/Contents/iNTERFACEWARE-Iguana/ack_verify.vmd"
+      keep_vmd_updated="false"
+      retry_on_ack_timeout="true"
+      retry_on_ack_verification_failed="false"
+      unlimited_count_of_retry="false"
+      count_of_retry="5"
+      disconnect_between_retries="true"
+      ack_reconnect_interval="10000"
+      ack_error_handling="1"
+      persistent_connection="true"
+      connection_timeout="10000"
+      unlimited_max_count_of_reconnect="false"
+      max_count_of_reconnect="60"
+      connection_lost_reconnect_interval="10000">
+      <dequeue_list>
+         <dequeue
+            source_name="self"
+            dequeue_guid="736A187A69D1B1E4B7D95813704E537F"/>
+      </dequeue_list>
+   </to_llp_client>
+   <from_file
+      file_type="HL7"
+      prepend_file_info="false"
+      eof_char=""
+      poll_time="10000"
+      max_message_size="15728640"
+      source_dir="C:/FHIR/ADT/"
+      source_file_extension="txt"
+      archive_processed_files="true"
+      processed_dir="C:/FHIR/PROCESS/"
+      error_dir="C:/FHIR/PROCESS/"
+      ignored_segments=""
+      segment_delimiter="0x0D"
+      message_delimiter="0x0A"
+      minimum_file_age="0"
+      escape_8bit="false"
+      escape_char=" "
+      ftp_username="admin"
+      ftp_password="LINQ3t+lhcGjCwBgU/uvupDjW5EaJNcxD7sGhhxi/B8="
+      sftp_authentication_method="user_password"
+      use_ftp="false"/>
+</channel>

@@ -1,0 +1,22 @@
+{
+    "LocalDependencies": [
+        "azure/adTokenAPI.lua",
+        "azure/configurations.lua",
+        "fhir/fhirApi.lua",
+        "fhir/fhirSql.lua",
+        "helper.lua"
+    ],
+    "LuaDependencies": [
+        "fhir.dstu3.client",
+        "fhir.help",
+        "fhir.net",
+        "retry"
+    ],
+    "OtherDependencies": [],
+    "timestamp": "1572458266",
+    "version_info": {
+        "build": 0,
+        "major": 6,
+        "minor": 0
+    }
+}
